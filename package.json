@@ -1,0 +1,21 @@
+{
+  "name": "social-post-engine",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "generate": "pnpm --filter @social-post-engine/post-generator generate",
+    "agent:status": "pnpm --filter @social-post-engine/agents agent:status",
+    "agent:publish": "pnpm --filter @social-post-engine/agents agent:publish",
+    "agent:mark-published": "pnpm --filter @social-post-engine/agents agent:mark-published",
+    "agent:add-post": "pnpm --filter @social-post-engine/agents agent:add-post",
+    "agent:autopublish": "pnpm --filter @social-post-engine/agents agent:autopublish",
+    "agent:health": "pnpm --filter @social-post-engine/agents agent:health",
+    "agent:regen-captions": "pnpm --filter @social-post-engine/agents agent:regen-captions",
+    "agent:autopublish-instagram": "pnpm --filter @social-post-engine/agents agent:autopublish-instagram"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

@@ -1,0 +1,26 @@
+node_modules/
+dist/
+.turbo/
+output/
+posts/
+*.tsbuildinfo
+
+# Generated images
+generated/
+
+# Playwright browser profile (contains login sessions)
+browser-data/
+
+# Agent data store
+data/
+
+# User brand config (keep private)
+brand.config.ts
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db

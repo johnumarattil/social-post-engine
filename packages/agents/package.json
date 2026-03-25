@@ -1,0 +1,31 @@
+{
+  "name": "@social-post-engine/agents",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "agent:status": "tsx src/cli/status.ts",
+    "agent:publish": "tsx src/cli/publish.ts",
+    "agent:mark-published": "tsx src/cli/mark-published.ts",
+    "agent:add-post": "tsx src/cli/add-post.ts",
+    "agent:autopublish": "tsx src/cli/autopublish.ts",
+    "agent:health": "tsx src/cli/health.ts",
+    "agent:regen-captions": "tsx src/cli/regen-captions.ts",
+    "agent:autopublish-instagram": "tsx src/cli/autopublish-instagram.ts"
+  },
+  "dependencies": {
+    "@social-post-engine/shared": "workspace:*",
+    "dotenv": "^17.3.1",
+    "playwright": "^1.58.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@social-post-engine/post-generator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "generate": "tsx src/cli.ts",
+    "test-layouts": "tsx src/test-layouts.ts"
+  },
+  "dependencies": {
+    "@social-post-engine/shared": "workspace:*",
+    "canvacord": "^6.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

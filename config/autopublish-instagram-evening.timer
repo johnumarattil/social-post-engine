@@ -1,0 +1,11 @@
+[Unit]
+Description=Social Post Engine Instagram Auto-Publisher Timer (daily 6 PM)
+
+[Timer]
+OnCalendar=*-*-* 18:00:00
+Persistent=true
+RandomizedDelaySec=120
+Unit=autopublish-instagram.service
+
+[Install]
+WantedBy=timers.target

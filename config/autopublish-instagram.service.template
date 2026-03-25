@@ -1,0 +1,17 @@
+[Unit]
+Description=Social Post Engine Instagram Auto-Publisher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=__WORKING_DIR__
+EnvironmentFile=__WORKING_DIR__/.env
+Environment=PATH=__NODE_BIN__:/usr/local/bin:/usr/bin:/bin
+ExecStart=__NODE_BIN__/pnpm agent:autopublish-instagram
+TimeoutStartSec=300
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

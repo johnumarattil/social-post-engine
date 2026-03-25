@@ -1,0 +1,11 @@
+[Unit]
+Description=Social Post Engine LinkedIn Auto-Publisher Timer (afternoon 1 PM)
+
+[Timer]
+OnCalendar=*-*-* 13:00:00
+Persistent=true
+RandomizedDelaySec=120
+Unit=autopublish.service
+
+[Install]
+WantedBy=timers.target
