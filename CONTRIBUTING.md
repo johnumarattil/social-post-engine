@@ -7,7 +7,7 @@ Thanks for your interest in contributing!
 1. **Prerequisites**: Node.js 22+, pnpm 9+
 2. Clone the repo and install dependencies:
    ```bash
-   git clone https://github.com/your-org/social-post-engine.git
+   git clone https://github.com/johnumarattil/social-post-engine.git
    cd social-post-engine
    pnpm install
    ```
